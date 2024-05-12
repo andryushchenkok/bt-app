@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -27,9 +28,10 @@
             android:layout_marginTop="10dp" />
 
         <LinearLayout
+            android:id="@+id/linearLayoutButtons"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="75dp"
+            android:layout_marginLeft="60dp"
             android:orientation="vertical">
 
             <Button
@@ -38,15 +40,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="500dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="onClickButtonUp"
                 android:text="Вверх" />
 
             <Button
                 android:id="@+id/buttonDown"
                 android:layout_width="256dp"
                 android:layout_height="wrap_content"
+                android:onClick="onClickButtonDown"
                 android:text="Вниз" />
 
         </LinearLayout>
 
     </LinearLayout>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
