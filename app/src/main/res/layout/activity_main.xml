@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Статус:"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerBtDevices"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonUp"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="500dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onClickButtonUp"
+                android:text="Вверх" />
+
+            <Button
+                android:id="@+id/buttonDown"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButtonDown"
+                android:text="Вниз" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
